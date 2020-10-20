@@ -29,6 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToyMoveDown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -37,12 +38,13 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Bag.cs" />
         <option value="$PROJECT_DIR$/Assets/BagMoveForward.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BagMoveForward.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ToyMoveDown.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DetectCollisions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PresentSpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DetectCollisions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToyMoveDown.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BagMoveForward.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603141297647</updated>
       <workItem from="1603141307296" duration="13000" />
-      <workItem from="1603141336400" duration="3588000" />
+      <workItem from="1603141336400" duration="3709000" />
+      <workItem from="1603159423465" duration="4425000" />
     </task>
     <servers />
   </component>
