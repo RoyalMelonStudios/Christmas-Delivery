@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
 
-    public bool isGameActive;
+    public bool isGameActive = false;
     private int score;
     
     public Vector3 boxSpawnPosition = new Vector3(0, 0.5f, -9);
@@ -43,14 +43,13 @@ public class GameManager : MonoBehaviour
     {
         while (isGameActive)
         {
+            SpawnRandomToy();
             yield return new WaitForSeconds(spawnInterval);
-            int index = Random.Range(0, toyPrefabs.Length);
-            Instantiate(toyPrefabs[index]);
         }
         
     }
     
-    public void SpawnToy()
+    public void SpawnRandomToy()
     {
         if (isGameActive)
         {

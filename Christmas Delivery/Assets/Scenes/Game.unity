@@ -186,59 +186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &369538818
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 369538820}
-  - component: {fileID: 369538819}
-  m_Layer: 0
-  m_Name: Spawn Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &369538819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369538818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 499c7a519246242939536e4176c0ec95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bagSpawnPosition: {x: 0, y: 0.5, z: -9}
-  boxPrefab: {fileID: 2670956187473523650, guid: f43283ce03bdb45c7bf18b5f03bd92cc,
-    type: 3}
-  startDelay: 0
-  spawnInterval: 2
-  toyPrefabs:
-  - {fileID: 2948465708781558500, guid: 68a20b6223b924bd0aa4318b62c4cecb, type: 3}
-  spawnRangeLeft: -3.5
-  spawnRangeRight: 9.5
---- !u!4 &369538820
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369538818}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &465118126
 GameObject:
@@ -292,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -678,7 +626,7 @@ RectTransform:
   - {fileID: 1610464715}
   - {fileID: 465118127}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -871,7 +819,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 473563502}
-  isGameActive: 1
+  isGameActive: 0
+  boxSpawnPosition: {x: 0, y: 0.5, z: -9}
+  boxPrefab: {fileID: 2670956187473523650, guid: f43283ce03bdb45c7bf18b5f03bd92cc,
+    type: 3}
+  startDelay: 0
+  spawnInterval: 3
+  toyPrefabs:
+  - {fileID: 2948465708781558500, guid: 68a20b6223b924bd0aa4318b62c4cecb, type: 3}
+  spawnRangeLeft: -3.5
+  spawnRangeRight: 9.5
 --- !u!4 &945515044
 Transform:
   m_ObjectHideFlags: 0
@@ -884,7 +841,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -1021,7 +978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
