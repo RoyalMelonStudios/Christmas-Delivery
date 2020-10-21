@@ -16,7 +16,9 @@ public class ToyMoveDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (gameManager.isGameActive)
+        {
             transform.Translate(Vector3.down * toyFallSpeed * Time.deltaTime);
+        }
     }
 }

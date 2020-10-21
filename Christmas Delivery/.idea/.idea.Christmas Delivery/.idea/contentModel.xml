@@ -11,6 +11,7 @@
           <e p="DestroyOutOfBounds.cs" t="Include" />
           <e p="DetectCollisions.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
           <e p="PresentSpawnManager.cs" t="Include" />
           <e p="ToyMoveDown.cs" t="Include" />
         </e>

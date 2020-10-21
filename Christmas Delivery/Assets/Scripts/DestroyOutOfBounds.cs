@@ -20,7 +20,7 @@ public class DestroyOutOfBounds : MonoBehaviour
         {
             if (!gameObject.CompareTag("Boxed"))
             {
-                gameMananger.isGameActive = false;
+                gameMananger.GameOver();
             }
             Destroy(gameObject);
         }

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public GameObject gameOverOverlay;
 
     public bool isGameActive = false;
     private int score;
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(SpawnToys());
     }
 
     // Update is called once per frame
@@ -56,8 +57,8 @@ public class GameManager : MonoBehaviour
             Vector3 spawnPosition = new Vector3(0, spawnHeight, Random.Range(spawnRangeLeft, spawnRangeRight));
             GameObject toy = toyPrefabs[Random.Range(0, toyPrefabs.Length)];
             Instantiate(toy, spawnPosition, toy.transform.rotation);
+            spawnInterval *= 0.98f;
         }
-
     }
 
     public void UpdateScore(int scoreToAdd)
@@ -66,18 +67,18 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
-    }
-
     public void RestartGame()
     {
-        isGameActive = true;
-        StartCoroutine(SpawnToys());
-        score = 0;
-        UpdateScore(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+      //  isGameActive = true;
+      //  score = 0;
+      //  UpdateScore(0);
+    }
+
+    public void GameOver()
+    {
+        isGameActive = false;
+        gameOverOverlay.SetActive(true);
     }
     
 }
