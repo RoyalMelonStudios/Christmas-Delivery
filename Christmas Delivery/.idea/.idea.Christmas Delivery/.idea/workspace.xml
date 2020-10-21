@@ -39,12 +39,12 @@
         <option value="$PROJECT_DIR$/Assets/Bag.cs" />
         <option value="$PROJECT_DIR$/Assets/BagMoveForward.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PresentSpawnManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DetectCollisions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BagMoveForward.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToyMoveDown.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DetectCollisions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
@@ -93,7 +93,7 @@
       <workItem from="1603141307296" duration="13000" />
       <workItem from="1603141336400" duration="3709000" />
       <workItem from="1603159423465" duration="5149000" />
-      <workItem from="1603243003081" duration="1977000" />
+      <workItem from="1603243003081" duration="4934000" />
     </task>
     <servers />
   </component>

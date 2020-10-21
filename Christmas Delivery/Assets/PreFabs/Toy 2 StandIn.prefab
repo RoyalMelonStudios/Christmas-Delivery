@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 2948465708781558505}
   - component: {fileID: 2948465708781558506}
   m_Layer: 0
-  m_Name: Toy 1 StandIn
-  m_TagString: Toy1
+  m_Name: Toy 2 StandIn
+  m_TagString: Toy2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aef435e7723db497a94de7c12ba4d2b8, type: 2}
+  - {fileID: 2100000, guid: ec417a7e4f0ad4c13be9ca6df11548d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

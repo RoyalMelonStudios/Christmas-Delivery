@@ -21,11 +21,44 @@ public class DetectCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Toy") && !gameObject.CompareTag("Boxed"))
+        if (IsCorrectBoxing(other) && !gameObject.CompareTag("Boxed"))
         {
             Destroy(other.gameObject);
             gameObject.tag = "Boxed";
             gameMananger.UpdateScore(1);
         }
+        
+        else if (!IsCorrectBoxing(other) && !gameObject.CompareTag("Boxed"))
+        {
+            gameMananger.GameOver();
+        }
     }
+
+    private bool IsCorrectBoxing(Collider other)
+    {
+        if (gameObject.CompareTag("Box1"))
+        {
+            if (other.gameObject.CompareTag("Toy1"))
+            {
+                return true;
+            }
+        }
+        else if (gameObject.CompareTag("Box2"))
+        {
+            if (other.gameObject.CompareTag("Toy2"))
+            {
+                return true;
+            }
+        }
+        else if (gameObject.CompareTag("Box3"))
+        {
+            if (other.gameObject.CompareTag("Toy3"))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
 }

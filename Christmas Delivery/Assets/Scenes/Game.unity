@@ -814,15 +814,21 @@ MonoBehaviour:
   scoreText: {fileID: 473563502}
   gameOverOverlay: {fileID: 1880283320}
   isGameActive: 1
-  boxSpawnPosition: {x: 0, y: 0.5, z: -9}
-  boxPrefab: {fileID: 2670956187473523650, guid: f43283ce03bdb45c7bf18b5f03bd92cc,
-    type: 3}
+  boxSpawnPosition: {x: 0, y: 0.5, z: -12}
+  spawnRangeLeft: -6
+  spawnRangeRight: 9.5
   startDelay: 0
   spawnInterval: 3
+  spawnIntervalRatioLowerBound: 0.95
+  spawnIntervalRatioUpperBound: 0.99
+  boxPrefabs:
+  - {fileID: 2670956187473523650, guid: f43283ce03bdb45c7bf18b5f03bd92cc, type: 3}
+  - {fileID: 2670956187473523650, guid: d87b891c3ea614679b6a53078956b459, type: 3}
+  - {fileID: 2670956187473523650, guid: 6dfccc4e925fe45e1a724c03d95a3554, type: 3}
   toyPrefabs:
   - {fileID: 2948465708781558500, guid: 68a20b6223b924bd0aa4318b62c4cecb, type: 3}
-  spawnRangeLeft: -3.5
-  spawnRangeRight: 9.5
+  - {fileID: 2948465708781558500, guid: a1dc1e98f182d464abf382bdce4569b4, type: 3}
+  - {fileID: 2948465708781558500, guid: 4b8d6b4aed0e14754ae14f4cfdb5558a, type: 3}
 --- !u!4 &945515044
 Transform:
   m_ObjectHideFlags: 0

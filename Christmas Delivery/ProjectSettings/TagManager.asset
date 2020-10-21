@@ -4,8 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Toy
   - Boxed
+  - Toy1
+  - Toy2
+  - Toy3
+  - Box1
+  - Box2
+  - Box3
   layers:
   - Default
   - TransparentFX
