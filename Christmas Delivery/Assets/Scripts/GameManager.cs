@@ -34,21 +34,22 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(SpawnToys());
     }
-
+ 
     // Update is called once per frame
     void Update()
     {
-        if (isGameActive && Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            Instantiate(boxPrefabs[0], boxSpawnPosition, boxPrefabs[0].transform.rotation);
+            SpawnBox1();
         }
-        else if (isGameActive && Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.W))
         {
-            Instantiate(boxPrefabs[1], boxSpawnPosition, boxPrefabs[1].transform.rotation);
+            SpawnBox2();
         }
-        else if (isGameActive && Input.GetKeyDown(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
-            Instantiate(boxPrefabs[2], boxSpawnPosition, boxPrefabs[2].transform.rotation);
+            SpawnBox3();
+    
         }
     }
     
@@ -60,6 +61,30 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(spawnInterval);
         }
         
+    }
+
+    public void SpawnBox1()
+    {
+        if (isGameActive)
+        {
+            Instantiate(boxPrefabs[0], boxSpawnPosition, boxPrefabs[0].transform.rotation);
+        }
+    }
+    
+    public void SpawnBox2()
+    {
+        if (isGameActive)
+        {
+            Instantiate(boxPrefabs[1], boxSpawnPosition, boxPrefabs[1].transform.rotation);
+        }
+    }
+    
+    public void SpawnBox3()
+    {
+        if (isGameActive)
+        {
+            Instantiate(boxPrefabs[2], boxSpawnPosition, boxPrefabs[2].transform.rotation);
+        }
     }
     
     public void SpawnRandomToy()
