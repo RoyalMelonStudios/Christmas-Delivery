@@ -50,3 +50,27 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+  - name: Break SFX
+    clip: {fileID: 8300000, guid: b52703304f68146bca97b122617b3311, type: 3}
+    volume: 0.805
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Mismatch Toy SFX
+    clip: {fileID: 8300000, guid: 046034cc549ac417b8b58851ecc2ce7e, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Spawn SFX
+    clip: {fileID: 8300000, guid: 42af4a886382943ad950741d91b9504c, type: 3}
+    volume: 0.336
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Right Toy SFX
+    clip: {fileID: 8300000, guid: f40f1535ef96342e4933d088733aaa2d, type: 3}
+    volume: 0.305
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0

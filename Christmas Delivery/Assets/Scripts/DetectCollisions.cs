@@ -25,12 +25,14 @@ public class DetectCollisions : MonoBehaviour
         {
             Destroy(other.gameObject);
             gameObject.tag = "Boxed";
+            FindObjectOfType<AudioManager>().Play("Right Toy SFX");
             gameMananger.IncreasePresentsPackaged(1);
             gameMananger.UpdateScore(1);
         }
         
         else if (!IsCorrectBoxing(other) && !gameObject.CompareTag("Boxed"))
         {
+            FindObjectOfType<AudioManager>().Play("Mismatch Toy SFX");
             gameMananger.IncreaseMismatchedPresents(1);
             gameMananger.GameOver();
         }

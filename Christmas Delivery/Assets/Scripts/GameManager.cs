@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public float spawnRangeRight = 9.5f;
     private float spawnHeight = 9;
 
-    public float startDelay = 2;
+    public float startDelay = 1;
     public float spawnInterval = 3;
     public float spawnIntervalRatioLowerBound = 0.95f;
     public float spawnIntervalRatioUpperBound = 0.99f;
@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
 */    
     IEnumerator SpawnToys()
     {
+        yield return new WaitForSeconds(startDelay);
         while (isGameActive)
         {
             SpawnRandomToy();
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
     {
         if (isGameActive)
         {
+            FindObjectOfType<AudioManager>().Play("Spawn SFX");
             Instantiate(boxPrefabs[0], boxSpawnPosition, boxPrefabs[0].transform.rotation);
         }
     }
@@ -79,6 +81,7 @@ public class GameManager : MonoBehaviour
     {
         if (isGameActive)
         {
+            FindObjectOfType<AudioManager>().Play("Spawn SFX");
             Instantiate(boxPrefabs[1], boxSpawnPosition, boxPrefabs[1].transform.rotation);
         }
     }
@@ -87,6 +90,7 @@ public class GameManager : MonoBehaviour
     {
         if (isGameActive)
         {
+            FindObjectOfType<AudioManager>().Play("Spawn SFX");
             Instantiate(boxPrefabs[2], boxSpawnPosition, boxPrefabs[2].transform.rotation);
         }
     }
@@ -118,6 +122,11 @@ public class GameManager : MonoBehaviour
       //  isGameActive = true;
       //  score = 0;
       //  UpdateScore(0);
+    }
+    
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void GameOver()
