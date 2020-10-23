@@ -25,11 +25,13 @@ public class DetectCollisions : MonoBehaviour
         {
             Destroy(other.gameObject);
             gameObject.tag = "Boxed";
+            gameMananger.IncreasePresentsPackaged(1);
             gameMananger.UpdateScore(1);
         }
         
         else if (!IsCorrectBoxing(other) && !gameObject.CompareTag("Boxed"))
         {
+            gameMananger.IncreaseMismatchedPresents(1);
             gameMananger.GameOver();
         }
     }

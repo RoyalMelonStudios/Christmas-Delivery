@@ -20,7 +20,12 @@ public class DestroyOutOfBounds : MonoBehaviour
         {
             if (!gameObject.CompareTag("Boxed"))
             {
+                if (gameObject.CompareTag("Toy1") || gameObject.CompareTag("Toy2") || gameObject.CompareTag("Toy3"))
+                    gameMananger.IncreaseToysBroken(1);
+                else if (gameObject.CompareTag("Box1") || gameObject.CompareTag("Box2") || gameObject.CompareTag("Box3"))
+                    gameMananger.IncreaseEmptyPresents(1);
                 gameMananger.GameOver();
+                
             }
             Destroy(gameObject);
         }

@@ -7,12 +7,15 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
           <e p="BagMoveForward.cs" t="Include" />
           <e p="DestroyOutOfBounds.cs" t="Include" />
           <e p="DetectCollisions.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GameStatistics.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="PresentSpawnManager.cs" t="Include" />
+          <e p="Sound.cs" t="Include" />
           <e p="ToyMoveDown.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

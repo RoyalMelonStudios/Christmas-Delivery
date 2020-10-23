@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI highScoreText;
     public GameObject gameOverOverlay;
 
     public bool isGameActive = false;
@@ -34,10 +35,11 @@ public class GameManager : MonoBehaviour
     {
 
         Application.targetFrameRate = 60;
+        highScoreText.text = "Best: " + PlayerPrefs.GetInt("HighScore", 0);
         StartCoroutine(SpawnToys());
     }
  
-    // Update is called once per frame
+ /*   // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -54,7 +56,7 @@ public class GameManager : MonoBehaviour
     
         }
     }
-    
+*/    
     IEnumerator SpawnToys()
     {
         while (isGameActive)
@@ -104,6 +106,10 @@ public class GameManager : MonoBehaviour
     {
         score += scoreToAdd;
         scoreText.text = "Score: " + score;
+        if (score > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            highScoreText.text = "Best: " + score;
+        }
     }
 
     public void RestartGame()
@@ -116,8 +122,38 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        SetHighScore(score);
+        
         isGameActive = false;
         gameOverOverlay.SetActive(true);
     }
+
+    void SetHighScore(int score)
+    {
+        if (score > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+        }
+    }
+
+    public void IncreasePresentsPackaged(int i)
+    {
+        PlayerPrefs.SetInt("PresentsPackaged", PlayerPrefs.GetInt("PresentsPackaged", 0) + i);
+    }
     
+    public void IncreaseToysBroken(int i)
+    {
+        PlayerPrefs.SetInt("ToysBroken", PlayerPrefs.GetInt("ToysBroken", 0) + i);
+    }
+    
+    public void IncreaseEmptyPresents(int i)
+    {
+        PlayerPrefs.SetInt("EmptyPresents", PlayerPrefs.GetInt("EmptyPresents", 0) + i);
+    }
+    
+    public void IncreaseMismatchedPresents(int i)
+    {
+        PlayerPrefs.SetInt("MismatchedPresents", PlayerPrefs.GetInt("MismatchedPresents", 0) + i);
+    }
+
 }
