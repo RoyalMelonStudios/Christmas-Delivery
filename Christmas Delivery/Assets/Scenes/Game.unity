@@ -1408,6 +1408,7 @@ MonoBehaviour:
   boxSpawnPosition: {x: 0, y: 0.5, z: -12}
   spawnRangeLeft: -6
   spawnRangeRight: 9.5
+  spawnHeight: 10.5
   startDelay: 1
   spawnInterval: 3
   spawnIntervalRatioLowerBound: 0.95
@@ -2328,6 +2329,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8803988429871729084, guid: 9df7444cce70140a1960548e9fcb2de0,
+        type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e9c0689db001459fb926be160e171ee, type: 3}
     - target: {fileID: 8803988429871729085, guid: 9df7444cce70140a1960548e9fcb2de0,
         type: 3}
       propertyPath: m_Name

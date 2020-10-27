@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public Vector3 boxSpawnPosition = new Vector3(0, 0.5f, -12);
     public float spawnRangeLeft = -6f;
     public float spawnRangeRight = 9.5f;
-    private float spawnHeight = 9;
+    public float spawnHeight = 10.5f;
 
     public float startDelay = 1;
     public float spawnInterval = 3;
