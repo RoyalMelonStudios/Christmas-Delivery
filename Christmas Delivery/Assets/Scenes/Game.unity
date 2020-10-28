@@ -1418,8 +1418,8 @@ MonoBehaviour:
   - {fileID: 2670956187473523650, guid: d87b891c3ea614679b6a53078956b459, type: 3}
   - {fileID: 2670956187473523650, guid: 6dfccc4e925fe45e1a724c03d95a3554, type: 3}
   toyPrefabs:
-  - {fileID: 2948465708781558500, guid: 68a20b6223b924bd0aa4318b62c4cecb, type: 3}
-  - {fileID: 2948465708781558500, guid: a1dc1e98f182d464abf382bdce4569b4, type: 3}
+  - {fileID: 131520, guid: 1ed533a8c248eac4299454be839f4bd2, type: 3}
+  - {fileID: 103914, guid: 2bddc876ee3f1da4dadf48a0c5540526, type: 3}
   - {fileID: 2948465708781558500, guid: 4b8d6b4aed0e14754ae14f4cfdb5558a, type: 3}
 --- !u!4 &945515044
 Transform:

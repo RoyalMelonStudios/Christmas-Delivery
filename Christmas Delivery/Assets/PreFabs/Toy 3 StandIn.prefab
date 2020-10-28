@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toyFallSpeed: 3
+  toyRotationSpeed: 20
 --- !u!114 &2948465708781558506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,3 +123,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightBound: 11
+  lowerBound: 0.27

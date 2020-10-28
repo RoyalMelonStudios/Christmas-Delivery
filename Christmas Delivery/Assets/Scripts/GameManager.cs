@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
         {
             Vector3 spawnPosition = new Vector3(0, spawnHeight, Random.Range(spawnRangeLeft, spawnRangeRight));
             GameObject toy = toyPrefabs[Random.Range(0, toyPrefabs.Length)];
-            Instantiate(toy, spawnPosition, toy.transform.rotation);
+            Instantiate(toy, spawnPosition, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)));
             spawnInterval *= Random.Range(spawnIntervalRatioLowerBound, spawnIntervalRatioUpperBound);
         }
     }

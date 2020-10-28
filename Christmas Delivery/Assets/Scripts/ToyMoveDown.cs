@@ -6,7 +6,9 @@ public class ToyMoveDown : MonoBehaviour
 {
     private GameManager gameManager;
     
-    public float toyFallSpeed = 5;
+    public float toyFallSpeed = 3;
+
+    public float toyRotationSpeed = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,8 @@ public class ToyMoveDown : MonoBehaviour
     {
         if (gameManager.isGameActive)
         {
-            transform.Translate(Vector3.down * toyFallSpeed * Time.deltaTime);
+            transform.Translate(Vector3.down * toyFallSpeed * Time.deltaTime, Space.World);
+            transform.Rotate(Vector3.up * toyRotationSpeed * Time.deltaTime, Space.World);
         }
     }
 }
