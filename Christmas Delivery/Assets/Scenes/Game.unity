@@ -1419,7 +1419,7 @@ MonoBehaviour:
   - {fileID: 2670956187473523650, guid: 6dfccc4e925fe45e1a724c03d95a3554, type: 3}
   toyPrefabs:
   - {fileID: 131520, guid: 1ed533a8c248eac4299454be839f4bd2, type: 3}
-  - {fileID: 103914, guid: 2bddc876ee3f1da4dadf48a0c5540526, type: 3}
+  - {fileID: 774874380077498188, guid: 72593822dc4aa4c99b4fbfca08cdbb85, type: 3}
   - {fileID: 2948465708781558500, guid: 4b8d6b4aed0e14754ae14f4cfdb5558a, type: 3}
 --- !u!4 &945515044
 Transform:
