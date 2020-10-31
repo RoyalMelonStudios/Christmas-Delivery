@@ -46,11 +46,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BagMoveForward.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameStatistics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PresentSpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DetectCollisions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PresentSpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToyMoveDown.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +103,7 @@
       <workItem from="1603477143507" duration="7919000" />
       <workItem from="1603760340070" duration="212000" />
       <workItem from="1603922952787" duration="1826000" />
+      <workItem from="1604106094270" duration="1710000" />
     </task>
     <servers />
   </component>

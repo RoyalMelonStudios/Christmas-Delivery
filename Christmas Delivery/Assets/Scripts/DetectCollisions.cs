@@ -21,7 +21,15 @@ public class DetectCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (IsCorrectBoxing(other) && !gameObject.CompareTag("Boxed"))
+        if (gameObject.CompareTag("Ground"))
+        {
+            Destroy(other.gameObject);
+            FindObjectOfType<AudioManager>().Play("Break SFX");
+            gameMananger.IncreaseToysBroken(1);
+            gameMananger.GameOver();
+        }
+
+        else if (IsCorrectBoxing(other) && !gameObject.CompareTag("Boxed"))
         {
             Destroy(other.gameObject);
             gameObject.tag = "Boxed";

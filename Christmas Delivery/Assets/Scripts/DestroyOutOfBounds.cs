@@ -18,26 +18,15 @@ public class DestroyOutOfBounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((transform.position.z > rightBound && gameObject)|| transform.position.y < 0.27f)
+        if (transform.position.z > rightBound)
         {
             if (!gameObject.CompareTag("Boxed"))
             {
-                if (gameObject.CompareTag("Toy1") || gameObject.CompareTag("Toy2") || gameObject.CompareTag("Toy3"))
-                {
-                    FindObjectOfType<AudioManager>().Play("Break SFX");
-                    gameMananger.IncreaseToysBroken(1);
-                }
-                else if (gameObject.CompareTag("Box1") || gameObject.CompareTag("Box2") ||
-                         gameObject.CompareTag("Box3"))
-                {
-                    FindObjectOfType<AudioManager>().Play("Mismatch Toy SFX");
-                    gameMananger.IncreaseEmptyPresents(1);
-                }
-
+                FindObjectOfType<AudioManager>().Play("Mismatch Toy SFX");
+                gameMananger.IncreaseEmptyPresents(1);
                 gameMananger.GameOver();
                 
             }
-            FindObjectOfType<AudioManager>().Play("Scan SFX");
             Destroy(gameObject);
         }
     }

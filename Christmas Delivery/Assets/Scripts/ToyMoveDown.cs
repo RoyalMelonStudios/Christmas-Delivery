@@ -8,7 +8,10 @@ public class ToyMoveDown : MonoBehaviour
     
     public float toyFallSpeed = 3;
 
-    public float toyRotationSpeed = 3;
+    public float toyRotationSpeedMin = 100;
+
+    public float toyRotationSpeedMax = 200;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +23,8 @@ public class ToyMoveDown : MonoBehaviour
     {
         if (gameManager.isGameActive)
         {
-            transform.Translate(Vector3.down * toyFallSpeed * Time.deltaTime, Space.World);
-            transform.Rotate(Vector3.up * toyRotationSpeed * Time.deltaTime, Space.World);
+            transform.Translate(Vector3.down * (toyFallSpeed * Time.deltaTime), Space.World);
+            transform.Rotate(Vector3.up * (Random.Range(toyRotationSpeedMin, toyRotationSpeedMax) * Time.deltaTime), Space.World);
         }
     }
 }
