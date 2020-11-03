@@ -6,7 +6,7 @@ public class BagMoveForward : MonoBehaviour
 {
     private GameManager gameManager;
 
-    public float bagSpeed = 5;
+    public float bagSpeed = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +17,6 @@ public class BagMoveForward : MonoBehaviour
     void Update()
     {
         if(gameManager.isGameActive) 
-            transform.Translate(Vector3.forward * bagSpeed * Time.deltaTime);
+            transform.Translate(Vector3.forward * bagSpeed * Time.deltaTime, Space.World);
     }
 }
