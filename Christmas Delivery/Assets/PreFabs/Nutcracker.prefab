@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: -5153415861768114192}
   - component: {fileID: 989784473872016222}
   m_Layer: 0
-  m_Name: Nutcracker Large
-  m_TagString: Toy2
+  m_Name: Nutcracker
+  m_TagString: Toy3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toyFallSpeed: 3
-  toyRotationSpeed: 100
+  toyRotationSpeedMin: 100
+  toyRotationSpeedMax: 200
 --- !u!65 &989784473872016222
 BoxCollider:
   m_ObjectHideFlags: 0

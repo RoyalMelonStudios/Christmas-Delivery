@@ -1415,12 +1415,12 @@ MonoBehaviour:
   spawnIntervalRatioUpperBound: 0.99
   boxPrefabs:
   - {fileID: 5613691379937793281, guid: c940ddfedf21543e49777af86a80708a, type: 3}
-  - {fileID: 2670956187473523650, guid: d87b891c3ea614679b6a53078956b459, type: 3}
-  - {fileID: 2670956187473523650, guid: 6dfccc4e925fe45e1a724c03d95a3554, type: 3}
+  - {fileID: 5320366524583931328, guid: 7dec3755404094bd8b6a797c28349e06, type: 3}
+  - {fileID: 7190750010329923827, guid: c12196aadef124bff8a02526c24541e3, type: 3}
   toyPrefabs:
   - {fileID: 131520, guid: 1ed533a8c248eac4299454be839f4bd2, type: 3}
+  - {fileID: 2733376090342618131, guid: 4d1249291f7ed4efbbdc665c7fd0b641, type: 3}
   - {fileID: 103914, guid: 2bddc876ee3f1da4dadf48a0c5540526, type: 3}
-  - {fileID: 2948465708781558500, guid: 4b8d6b4aed0e14754ae14f4cfdb5558a, type: 3}
 --- !u!4 &945515044
 Transform:
   m_ObjectHideFlags: 0
